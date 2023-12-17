@@ -1,0 +1,672 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header{
+    height: 100px;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header h2{
+    width: 10%;
+    margin-left: 80px;
+    color: white;
+}
+.left{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    color: white;
+}
+.left a{
+    margin-right: 80px;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-color: #ee5007;
+}
+.page1{
+    height: 757px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+video{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+   
+}
+.main{
+    height: 300px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 200px;
+}
+.main h1{
+    font-size: 75px;
+    font-family: cursive;
+    margin-bottom: 80px;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+.footer .time,.place,.brand{
+    width: 20%;
+    color: white;
+    height: 100%;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+}
+.footer i{
+    font-size: 25px;
+    margin-right: 15px;
+    color: #ee5007;
+   
+}
+.footer .place{
+    width: 25%;
+}
+.footer .brand i{
+    color: white;
+    background-color: #ee5007;
+    padding: 15px;
+    border-radius:40px;  
+}
+
+  @keyframes reza{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    } 
+   
+.footer .brand p{
+    margin-right: 20px;
+}
+.footer .brand i:hover{
+    background-color: gold;
+    animation-name: reza;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+.page2{
+    height: 757px;
+    background-image: url(images/edward-unsplash-blur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.asli{
+    height: 65%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.asli h1,h2{
+    color: white;
+}
+.asli .left{
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.asli .left p{
+    margin: 30px 0;
+    font-size: 20px;
+    text-align: justify;
+    color: #eddfda;
+}
+.asli .right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.asli .right img{
+    height: 80%;
+    border-radius: 20px;
+    width: 90%;
+}
+.roaks{
+    position: absolute;
+    background-color:rgba(240,236,222,.9);
+    height: 28%;
+    width: 85%;
+    bottom: 70px;
+    border-radius: 20px;
+    display: flex;
+    
+}
+.roaks .chap{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.roaks .rast{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rast h2{
+    margin-bottom: 25px;
+}
+.roaks i{
+    padding: 20px;
+    background-color: gold;
+    border-radius: 50%;
+}
+.roaks p{
+    color: gray;
+}
+.roaks h2{
+    color: black;
+    font-weight: bold;
+
+}
+.page3{
+    height: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Main{
+    height: 70%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.Main .L{
+    width: 50%;
+    height: 100%;
+    background-image: url(images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.information{
+    width: 94%;
+    background-color: rgba(255,215,0,.7);
+    height: 240px;
+    position: absolute;
+    bottom: 20px;
+    border-radius: 40px;
+    padding: 40px 30px;
+    transform: translateY(+260px);
+    visibility: hidden;
+}
+.kk{
+    display: flex;
+    width: 60%;
+    height: 40px;
+    justify-content: space-between;
+    
+}
+.kk p:first-child{
+    color: white;
+}
+.information hr{
+    border: 0;
+    margin-bottom: 30px;
+}
+.R2:hover .information{
+    visibility: visible;
+    transform: translateY(-10px);
+    transition-duration: .6s;
+    transition-timing-function: ease-out;
+    transition-property: transform;
+}
+.L:hover .information{
+    visibility: visible;
+    transform: translateY(-10px);
+    transition-duration: .6s;
+    transition-timing-function: ease-out;
+    transition-property: transform;
+}
+.R1:hover .information{
+    visibility: visible;
+    transform: translateY(-10px);
+    transition-duration: .6s;
+    transition-timing-function: ease-out;
+    transition-property: transform;
+}
+.Main .R{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    justify-content: space-around;
+}
+.Main .R .R1{
+    height: 50%;
+    background-color: red;
+    background-image: url(images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg);
+    background-size: cover;
+    border-radius: 40px;
+    position: relative;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Main .R .R2{
+    height: 50%;
+    background-color: aqua;
+    background-image: url(images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg);
+    background-size: cover;
+    margin-top: 30px;
+    border-radius: 40px;
+    position: relative;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page3 h1{
+    margin: 20px;
+    font-size: 35px;
+}
+.page4{
+    height: 850px;
+    background-image: url(images/nainoa-shizuru-unsplash-blur.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.table{
+    width: 80%;
+    height: 70%;
+    border-radius: 20px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    
+}
+td,th{
+    border: 1px solid gray;
+    
+}
+.titles{
+    height: 15%
+}
+td:nth-child(1){
+    width: 13%;
+    text-align: center;
+    background-color: #212529
+}
+td:nth-child(3),th:nth-child(3){
+    width: 24%
+}
+td:nth-child(4),th:nth-child(4){
+    width: 30%;
+}
+tr:nth-child(1){
+ background-color: #ee5007;
+    
+}
+tr:nth-child(2){
+    height: 30%;
+    
+}
+tr:nth-child(4){
+    height: 30%;
+}
+.six{
+     background-color: rgba(0,0,0,.5);
+    background-image: url(images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+   background-blend-mode: soft-light;
+}
+.eight{
+    background-color: rgba(0,0,0,.5);
+    background-image: url(images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+      background-blend-mode: soft-light;
+}
+.fourteen{
+    background-color: rgba(0,0,0,.5);
+    background-image: url(images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+      background-blend-mode: soft-light;
+}
+tr{
+    text-align: center;
+}
+table p,h2{
+    margin: 15px 0;
+}
+.rang{
+    background-color: #212529;
+}
+.page5{
+    height: 700px;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dotted{
+    height: 60%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.chapchin{
+    width: 50%;
+    height: 93%;
+    border: 7px dotted black;
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+}
+.rastchin{
+    width: 49%;
+    border: 7px dotted black;
+    border-radius: 20px;
+    padding: 40px;
+    
+}
+.orange{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #ee5007;
+    right: 25px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.earlyone{
+    margin-top: 50px;
+}
+.earlyone p{
+    font-size: 20px;
+}
+span{
+    font-size: 25px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.earlytwo{
+    padding: 20px;
+    height: 100px;
+    width: 90%;
+   
+    margin-top: 30px;
+    
+}
+.earlytwo ul{
+    display: flex;
+    font-size: 20px;
+    flex-wrap: wrap;
+    
+}
+.earlytwo ul li{
+    width:50%;
+    
+}
+.buy{
+    color: gold;
+    font-size: 20px;
+    margin-top: 30px;
+    
+    
+}
+.buy i{
+    margin-left: 20px;
+}
+.gold{
+    color: gold;
+    
+}
+.page6{
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.google{
+    width: 35%;
+    height: 100px;
+    background-color: #edf5fc;
+}
+.page6 h1{
+    font-size: 55px;
+}
+.page6 .form{
+    height: 500px;
+    width: 60%;
+    margin-top: 80px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 40px  rgba(0,0,0,.4)
+}
+.google{
+    display: flex;
+    padding: 5px;
+    font-size: 30px;
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 200px;
+    margin-top: 40px;
+}
+.google p{
+    color: gold;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 40px;
+}
+form{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.ff:active,.fff:active,.ffff:{
+    border: 2px solid blue;
+}
+.ff{
+    width: 48%;
+    height: 50px;
+    
+}
+.fff{
+    width: 100%;
+    height: 50px;
+    
+}
+.ffff{
+    width: 100%;
+    height: 30%;
+   
+}
+.fffff{
+    height: 50px;
+    width: 30%;
+    margin: auto;
+    border: 0;
+    background-color: #ee5007;
+    border-radius: 40px;
+    color: white;
+    
+}
+.ff,.fff,.ffff{
+    border:.1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+::placeholder{
+    color: rgba(0,0,0,.8);
+    font-size: 16px
+}
+.page7{
+    height: 600px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.page7 .head{
+    height: 100px;
+    background-color: #ee5007;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+.head h1{
+    width: 18%;
+
+}
+.head ul{
+    list-style-type: none;
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    
+}
+.head ul li{
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+}
+.head ul li:hover{
+    background-color: gold;
+    animation-name: reza;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.vasat{
+    height: 50%;
+    padding: 80px;
+    display: flex;
+}
+.vasat h2{
+    color: gold;
+}
+.vasat p,li{
+    color: gray;
+}
+.links{
+    width: 45%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+    
+}
+.links h2{
+    height: 50%;
+    
+}
+.links ul{
+    list-style-type: none;
+    display: flex;
+    height: 50%;
+    font-size: 20px;
+    width: 80%;
+    justify-content: space-between;
+}
+.have{
+    width: 240px;
+    height: 150px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.location{
+    width: 260px;
+    height: 200px;
+    margin-left: 200px;
+     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+hr{
+    height: .2px;
+    background-color: gray;
+    border: 0;
+}
+.tamoom{
+    height: 50px;
+    width: 50%;
+    margin-left: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+}
